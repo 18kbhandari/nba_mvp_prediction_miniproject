@@ -38,6 +38,7 @@ nba_mvp_prediction_miniproject/
 │   ├── season_ranking_evaluation.csv
 │   ├── final_mvp_ranking.csv
 │   └── *_feature_importance.csv
+├── app.py                  # Streamlit UI
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -57,6 +58,13 @@ nba_mvp_prediction_miniproject/
 
 Run the notebook with its working directory set to the `notebooks/` folder. It reads source data from `../data/` and writes generated CSV results to `../outputs/`.
 
+## Run the UI
+After the notebook has generated the CSVs in `outputs/` (they are already included), launch the web app from the repository root:
+```bash
+streamlit run app.py
+```
+Pages: season rankings, model comparison, feature importance, and a "try your own stats" predictor that retrains the four models on seasons through 2021.
+
 ## Outputs
 - `final_mvp_ranking.csv`: ranked MVP candidates based on the model outputs.
 - `nba_mvp_model_data.csv`: cleaned dataset used for modeling.
@@ -75,4 +83,4 @@ These results are preliminary and should not be treated as proof of reliable fut
 The combined score is a ranking score, not a calibrated probability of winning MVP.
 
 ## Technologies
-Python, Pandas, NumPy, scikit-learn, Matplotlib, Jupyter Notebook.
+Python, Pandas, NumPy, scikit-learn, Matplotlib, Jupyter Notebook, Streamlit, Plotly.
