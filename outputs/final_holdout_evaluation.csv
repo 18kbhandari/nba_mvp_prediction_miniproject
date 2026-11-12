@@ -1,0 +1,5 @@
+Experiment,Setting,Value,Model,Validation seasons,Seasons,Candidate rows,Candidates/season,MVP inclusion rate,Top-1 accuracy,Top-3 accuracy,Top-5 accuracy,Accuracy,Precision,Recall,F1,ROC-AUC,PR-AUC,False positives,True positives
+Untouched holdout,Configuration,window=Full; features=A_original_13; candidates=Top5,Logistic Regression,2025-2025,1,5,5.0,1.0,0.0,1.0,1.0,0.6,0.3333333333333333,1.0,0.5,0.5,0.3333333333333333,2,1
+Untouched holdout,Configuration,window=Full; features=A_original_13; candidates=Top5,Random Forest,2025-2025,1,5,5.0,1.0,1.0,1.0,1.0,0.8,0.0,0.0,0.0,1.0,1.0,0,0
+Untouched holdout,Configuration,window=Full; features=A_original_13; candidates=Top5,SVM (RBF),2025-2025,1,5,5.0,1.0,0.0,1.0,1.0,0.6,0.0,0.0,0.0,0.75,0.5,1,0
+Untouched holdout,Configuration,window=Full; features=A_original_13; candidates=Top5,XGBoost,2025-2025,1,5,5.0,1.0,0.0,1.0,1.0,0.6,0.0,0.0,0.0,0.75,0.5,1,0

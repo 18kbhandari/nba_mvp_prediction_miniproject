@@ -1,0 +1,21 @@
+season,player_id,player,team,MVP,voting_share,model,probability,window,population,mvp_in_candidate_pool,predicted_rank
+2025,jokicni01,Nikola Jokić,DEN,0,0.787,Logistic Regression,0.9372500385694615,Full,Top5,1,1
+2025,antetgi01,Giannis Antetokounmpo,MIL,0,0.47,Logistic Regression,0.7668067678143,Full,Top5,1,2
+2025,gilgesh01,Shai Gilgeous-Alexander,OKC,1,0.913,Logistic Regression,0.7081750113953457,Full,Top5,1,3
+2025,doncilu01,Luka Dončić,2TM,0,0.0,Logistic Regression,0.15871065513646448,Full,Top5,1,5
+2025,tatumja01,Jayson Tatum,BOS,0,0.311,Logistic Regression,0.35108695524206174,Full,Top5,1,4
+2025,jokicni01,Nikola Jokić,DEN,0,0.787,SVM (RBF),0.5407487325006107,Full,Top5,1,1
+2025,antetgi01,Giannis Antetokounmpo,MIL,0,0.47,SVM (RBF),0.218034842151098,Full,Top5,1,3
+2025,gilgesh01,Shai Gilgeous-Alexander,OKC,1,0.913,SVM (RBF),0.39508366062849537,Full,Top5,1,2
+2025,doncilu01,Luka Dončić,2TM,0,0.0,SVM (RBF),0.07229774845084674,Full,Top5,1,5
+2025,tatumja01,Jayson Tatum,BOS,0,0.311,SVM (RBF),0.07762132643150217,Full,Top5,1,4
+2025,jokicni01,Nikola Jokić,DEN,0,0.787,Random Forest,0.444191960542017,Full,Top5,1,2
+2025,antetgi01,Giannis Antetokounmpo,MIL,0,0.47,Random Forest,0.2812361583590749,Full,Top5,1,3
+2025,gilgesh01,Shai Gilgeous-Alexander,OKC,1,0.913,Random Forest,0.4534536788699837,Full,Top5,1,1
+2025,doncilu01,Luka Dončić,2TM,0,0.0,Random Forest,0.1448304341608742,Full,Top5,1,5
+2025,tatumja01,Jayson Tatum,BOS,0,0.311,Random Forest,0.15712634742532497,Full,Top5,1,4
+2025,jokicni01,Nikola Jokić,DEN,0,0.787,XGBoost,0.7594240307807922,Full,Top5,1,1
+2025,antetgi01,Giannis Antetokounmpo,MIL,0,0.47,XGBoost,0.2512325644493103,Full,Top5,1,4
+2025,gilgesh01,Shai Gilgeous-Alexander,OKC,1,0.913,XGBoost,0.48928308486938477,Full,Top5,1,2
+2025,doncilu01,Luka Dončić,2TM,0,0.0,XGBoost,0.12092207372188568,Full,Top5,1,5
+2025,tatumja01,Jayson Tatum,BOS,0,0.311,XGBoost,0.2749130427837372,Full,Top5,1,3

@@ -1,0 +1,141 @@
+season,player_id,player,team,MVP,voting_share,model,probability,window,population,mvp_in_candidate_pool,predicted_rank
+2018,westbru01,Russell Westbrook,OKC,0,0.075,Logistic Regression,0.7162539777177971,Full,Top5,1,2
+2018,jamesle01,LeBron James,CLE,0,0.731,Logistic Regression,0.7814396037134456,Full,Top5,1,1
+2018,hardeja01,James Harden,HOU,1,0.955,Logistic Regression,0.42164557592353274,Full,Top5,1,4
+2018,couside01,DeMarcus Cousins,NOP,0,0.0,Logistic Regression,0.14987217501798675,Full,Top5,1,5
+2018,antetgi01,Giannis Antetokounmpo,MIL,0,0.074,Logistic Regression,0.4552323033999189,Full,Top5,1,3
+2018,westbru01,Russell Westbrook,OKC,0,0.075,SVM (RBF),0.19423100541366473,Full,Top5,1,3
+2018,jamesle01,LeBron James,CLE,0,0.731,SVM (RBF),0.28945855807454185,Full,Top5,1,1
+2018,hardeja01,James Harden,HOU,1,0.955,SVM (RBF),0.207381591699974,Full,Top5,1,2
+2018,couside01,DeMarcus Cousins,NOP,0,0.0,SVM (RBF),0.08530612786739245,Full,Top5,1,5
+2018,antetgi01,Giannis Antetokounmpo,MIL,0,0.074,SVM (RBF),0.1290822159451059,Full,Top5,1,4
+2018,westbru01,Russell Westbrook,OKC,0,0.075,Random Forest,0.2927038232655588,Full,Top5,1,2
+2018,jamesle01,LeBron James,CLE,0,0.731,Random Forest,0.4271212781657101,Full,Top5,1,1
+2018,hardeja01,James Harden,HOU,1,0.955,Random Forest,0.11058157884006334,Full,Top5,1,5
+2018,couside01,DeMarcus Cousins,NOP,0,0.0,Random Forest,0.125024712114203,Full,Top5,1,4
+2018,antetgi01,Giannis Antetokounmpo,MIL,0,0.074,Random Forest,0.16683507152514784,Full,Top5,1,3
+2018,westbru01,Russell Westbrook,OKC,0,0.075,XGBoost,0.28478360176086426,Full,Top5,1,2
+2018,jamesle01,LeBron James,CLE,0,0.731,XGBoost,0.42195630073547363,Full,Top5,1,1
+2018,hardeja01,James Harden,HOU,1,0.955,XGBoost,0.07170362025499344,Full,Top5,1,4
+2018,couside01,DeMarcus Cousins,NOP,0,0.0,XGBoost,0.04891782999038696,Full,Top5,1,5
+2018,antetgi01,Giannis Antetokounmpo,MIL,0,0.074,XGBoost,0.16831226646900177,Full,Top5,1,3
+2019,hardeja01,James Harden,HOU,0,0.768,Logistic Regression,0.606116474116658,Full,Top5,1,3
+2019,antetgi01,Giannis Antetokounmpo,MIL,1,0.932,Logistic Regression,0.7406778559990225,Full,Top5,1,1
+2019,embiijo01,Joel Embiid,PHI,0,0.049,Logistic Regression,0.4616441045021897,Full,Top5,1,5
+2019,westbru01,Russell Westbrook,OKC,0,0.008,Logistic Regression,0.7325364270283704,Full,Top5,1,2
+2019,jamesle01,LeBron James,LAL,0,0.001,Logistic Regression,0.5126282282650221,Full,Top5,1,4
+2019,hardeja01,James Harden,HOU,0,0.768,SVM (RBF),0.30891237169342195,Full,Top5,1,1
+2019,antetgi01,Giannis Antetokounmpo,MIL,1,0.932,SVM (RBF),0.1390690237471684,Full,Top5,1,2
+2019,embiijo01,Joel Embiid,PHI,0,0.049,SVM (RBF),0.06714491454274034,Full,Top5,1,5
+2019,westbru01,Russell Westbrook,OKC,0,0.008,SVM (RBF),0.1115454215668884,Full,Top5,1,4
+2019,jamesle01,LeBron James,LAL,0,0.001,SVM (RBF),0.1357471536134209,Full,Top5,1,3
+2019,hardeja01,James Harden,HOU,0,0.768,Random Forest,0.36072732954708525,Full,Top5,1,1
+2019,antetgi01,Giannis Antetokounmpo,MIL,1,0.932,Random Forest,0.08719987666210444,Full,Top5,1,4
+2019,embiijo01,Joel Embiid,PHI,0,0.049,Random Forest,0.05185573580131612,Full,Top5,1,5
+2019,westbru01,Russell Westbrook,OKC,0,0.008,Random Forest,0.2312135918855632,Full,Top5,1,3
+2019,jamesle01,LeBron James,LAL,0,0.001,Random Forest,0.25730129754096337,Full,Top5,1,2
+2019,hardeja01,James Harden,HOU,0,0.768,XGBoost,0.37653848528862,Full,Top5,1,1
+2019,antetgi01,Giannis Antetokounmpo,MIL,1,0.932,XGBoost,0.07789536565542221,Full,Top5,1,4
+2019,embiijo01,Joel Embiid,PHI,0,0.049,XGBoost,0.04067302495241165,Full,Top5,1,5
+2019,westbru01,Russell Westbrook,OKC,0,0.008,XGBoost,0.10226330906152725,Full,Top5,1,3
+2019,jamesle01,LeBron James,LAL,0,0.001,XGBoost,0.1627621054649353,Full,Top5,1,2
+2020,antetgi01,Giannis Antetokounmpo,MIL,1,0.952,Logistic Regression,0.679338517007895,Full,Top5,1,1
+2020,hardeja01,James Harden,HOU,0,0.363,Logistic Regression,0.4742496389722434,Full,Top5,1,3
+2020,doncilu01,Luka Dončić,DAL,0,0.198,Logistic Regression,0.2358925930635696,Full,Top5,1,4
+2020,jamesle01,LeBron James,LAL,0,0.746,Logistic Regression,0.6355337509113153,Full,Top5,1,2
+2020,youngtr01,Trae Young,ATL,0,0.0,Logistic Regression,0.06195734058694446,Full,Top5,1,5
+2020,antetgi01,Giannis Antetokounmpo,MIL,1,0.952,SVM (RBF),0.2029371700935193,Full,Top5,1,2
+2020,hardeja01,James Harden,HOU,0,0.363,SVM (RBF),0.24615347000642748,Full,Top5,1,1
+2020,doncilu01,Luka Dončić,DAL,0,0.198,SVM (RBF),0.1719093392855894,Full,Top5,1,4
+2020,jamesle01,LeBron James,LAL,0,0.746,SVM (RBF),0.13721923974365563,Full,Top5,1,5
+2020,youngtr01,Trae Young,ATL,0,0.0,SVM (RBF),0.1732166000273813,Full,Top5,1,3
+2020,antetgi01,Giannis Antetokounmpo,MIL,1,0.952,Random Forest,0.23733475275060717,Full,Top5,1,1
+2020,hardeja01,James Harden,HOU,0,0.363,Random Forest,0.23093098583188593,Full,Top5,1,2
+2020,doncilu01,Luka Dončić,DAL,0,0.198,Random Forest,0.13483274981440574,Full,Top5,1,5
+2020,jamesle01,LeBron James,LAL,0,0.746,Random Forest,0.19895323558561823,Full,Top5,1,3
+2020,youngtr01,Trae Young,ATL,0,0.0,Random Forest,0.14953937727758135,Full,Top5,1,4
+2020,antetgi01,Giannis Antetokounmpo,MIL,1,0.952,XGBoost,0.21565507352352142,Full,Top5,1,2
+2020,hardeja01,James Harden,HOU,0,0.363,XGBoost,0.19094820320606232,Full,Top5,1,3
+2020,doncilu01,Luka Dončić,DAL,0,0.198,XGBoost,0.05768005549907684,Full,Top5,1,5
+2020,jamesle01,LeBron James,LAL,0,0.746,XGBoost,0.2670106291770935,Full,Top5,1,1
+2020,youngtr01,Trae Young,ATL,0,0.0,XGBoost,0.09315254539251328,Full,Top5,1,4
+2021,jokicni01,Nikola Jokić,DEN,1,0.961,Logistic Regression,0.8406228033820036,Full,Top5,1,1
+2021,westbru01,Russell Westbrook,WAS,0,0.005,Logistic Regression,0.5680411206133787,Full,Top5,1,3
+2021,antetgi01,Giannis Antetokounmpo,MIL,0,0.345,Logistic Regression,0.5914821053844675,Full,Top5,1,2
+2021,doncilu01,Luka Dončić,DAL,0,0.042,Logistic Regression,0.19418492004542437,Full,Top5,1,5
+2021,hardeja01,James Harden,2TM,0,0.001,Logistic Regression,0.2996675751730562,Full,Top5,1,4
+2021,jokicni01,Nikola Jokić,DEN,1,0.961,SVM (RBF),0.5362067414245377,Full,Top5,1,1
+2021,westbru01,Russell Westbrook,WAS,0,0.005,SVM (RBF),0.06458912688086557,Full,Top5,1,5
+2021,antetgi01,Giannis Antetokounmpo,MIL,0,0.345,SVM (RBF),0.28997605862909503,Full,Top5,1,2
+2021,doncilu01,Luka Dončić,DAL,0,0.042,SVM (RBF),0.1393261501125011,Full,Top5,1,3
+2021,hardeja01,James Harden,2TM,0,0.001,SVM (RBF),0.08036539618825293,Full,Top5,1,4
+2021,jokicni01,Nikola Jokić,DEN,1,0.961,Random Forest,0.4054973704202527,Full,Top5,1,2
+2021,westbru01,Russell Westbrook,WAS,0,0.005,Random Forest,0.11670568417987615,Full,Top5,1,4
+2021,antetgi01,Giannis Antetokounmpo,MIL,0,0.345,Random Forest,0.4540610387320073,Full,Top5,1,1
+2021,doncilu01,Luka Dončić,DAL,0,0.042,Random Forest,0.11184100877880546,Full,Top5,1,5
+2021,hardeja01,James Harden,2TM,0,0.001,Random Forest,0.1931741543177998,Full,Top5,1,3
+2021,jokicni01,Nikola Jokić,DEN,1,0.961,XGBoost,0.6955029964447021,Full,Top5,1,1
+2021,westbru01,Russell Westbrook,WAS,0,0.005,XGBoost,0.04433191940188408,Full,Top5,1,5
+2021,antetgi01,Giannis Antetokounmpo,MIL,0,0.345,XGBoost,0.49988988041877747,Full,Top5,1,2
+2021,doncilu01,Luka Dončić,DAL,0,0.042,XGBoost,0.058165520429611206,Full,Top5,1,4
+2021,hardeja01,James Harden,2TM,0,0.001,XGBoost,0.15240979194641113,Full,Top5,1,3
+2022,jokicni01,Nikola Jokić,DEN,1,0.875,Logistic Regression,0.9285783675510372,Full,Top5,1,1
+2022,antetgi01,Giannis Antetokounmpo,MIL,0,0.595,Logistic Regression,0.7594520718637153,Full,Top5,1,2
+2022,embiijo01,Joel Embiid,PHI,0,0.706,Logistic Regression,0.6836677233878133,Full,Top5,1,3
+2022,doncilu01,Luka Dončić,DAL,0,0.146,Logistic Regression,0.21084362407612112,Full,Top5,1,5
+2022,jamesle01,LeBron James,LAL,0,0.001,Logistic Regression,0.4513674283273942,Full,Top5,1,4
+2022,jokicni01,Nikola Jokić,DEN,1,0.875,SVM (RBF),0.47791353622458976,Full,Top5,1,1
+2022,antetgi01,Giannis Antetokounmpo,MIL,0,0.595,SVM (RBF),0.29187642659327073,Full,Top5,1,2
+2022,embiijo01,Joel Embiid,PHI,0,0.706,SVM (RBF),0.17773759250166296,Full,Top5,1,3
+2022,doncilu01,Luka Dončić,DAL,0,0.146,SVM (RBF),0.11674323752418925,Full,Top5,1,4
+2022,jamesle01,LeBron James,LAL,0,0.001,SVM (RBF),0.10320348258479062,Full,Top5,1,5
+2022,jokicni01,Nikola Jokić,DEN,1,0.875,Random Forest,0.5367804525894971,Full,Top5,1,1
+2022,antetgi01,Giannis Antetokounmpo,MIL,0,0.595,Random Forest,0.39429223900742616,Full,Top5,1,2
+2022,embiijo01,Joel Embiid,PHI,0,0.706,Random Forest,0.23891570182461688,Full,Top5,1,4
+2022,doncilu01,Luka Dončić,DAL,0,0.146,Random Forest,0.07641000110975316,Full,Top5,1,5
+2022,jamesle01,LeBron James,LAL,0,0.001,Random Forest,0.33075820663232186,Full,Top5,1,3
+2022,jokicni01,Nikola Jokić,DEN,1,0.875,XGBoost,0.6702930927276611,Full,Top5,1,1
+2022,antetgi01,Giannis Antetokounmpo,MIL,0,0.595,XGBoost,0.5358843207359314,Full,Top5,1,2
+2022,embiijo01,Joel Embiid,PHI,0,0.706,XGBoost,0.21363849937915802,Full,Top5,1,4
+2022,doncilu01,Luka Dončić,DAL,0,0.146,XGBoost,0.045023441314697266,Full,Top5,1,5
+2022,jamesle01,LeBron James,LAL,0,0.001,XGBoost,0.2899012565612793,Full,Top5,1,3
+2023,doncilu01,Luka Dončić,DAL,0,0.01,Logistic Regression,0.39888684894421916,Full,Top5,1,4
+2023,antetgi01,Giannis Antetokounmpo,MIL,0,0.606,Logistic Regression,0.5467091191057911,Full,Top5,1,3
+2023,embiijo01,Joel Embiid,PHI,1,0.915,Logistic Regression,0.6166910788635378,Full,Top5,1,2
+2023,jokicni01,Nikola Jokić,DEN,0,0.674,Logistic Regression,0.9001208287980142,Full,Top5,1,1
+2023,lillada01,Damian Lillard,POR,0,0.0,Logistic Regression,0.24082154342255674,Full,Top5,1,5
+2023,doncilu01,Luka Dončić,DAL,0,0.01,SVM (RBF),0.19092006204032774,Full,Top5,1,3
+2023,antetgi01,Giannis Antetokounmpo,MIL,0,0.606,SVM (RBF),0.2030752142432491,Full,Top5,1,2
+2023,embiijo01,Joel Embiid,PHI,1,0.915,SVM (RBF),0.16818474455710752,Full,Top5,1,4
+2023,jokicni01,Nikola Jokić,DEN,0,0.674,SVM (RBF),0.42200672282668206,Full,Top5,1,1
+2023,lillada01,Damian Lillard,POR,0,0.0,SVM (RBF),0.0853232641154056,Full,Top5,1,5
+2023,doncilu01,Luka Dončić,DAL,0,0.01,Random Forest,0.15298452293686152,Full,Top5,1,5
+2023,antetgi01,Giannis Antetokounmpo,MIL,0,0.606,Random Forest,0.34217587965078744,Full,Top5,1,2
+2023,embiijo01,Joel Embiid,PHI,1,0.915,Random Forest,0.1982093372867991,Full,Top5,1,3
+2023,jokicni01,Nikola Jokić,DEN,0,0.674,Random Forest,0.4712013445463119,Full,Top5,1,1
+2023,lillada01,Damian Lillard,POR,0,0.0,Random Forest,0.15983210855459243,Full,Top5,1,4
+2023,doncilu01,Luka Dončić,DAL,0,0.01,XGBoost,0.1401563137769699,Full,Top5,1,3
+2023,antetgi01,Giannis Antetokounmpo,MIL,0,0.606,XGBoost,0.5764991641044617,Full,Top5,1,2
+2023,embiijo01,Joel Embiid,PHI,1,0.915,XGBoost,0.12214283645153046,Full,Top5,1,4
+2023,jokicni01,Nikola Jokić,DEN,0,0.674,XGBoost,0.6656141877174377,Full,Top5,1,1
+2023,lillada01,Damian Lillard,POR,0,0.0,XGBoost,0.06722225248813629,Full,Top5,1,5
+2024,doncilu01,Luka Dončić,DAL,0,0.572,Logistic Regression,0.5634093140572086,Full,Top5,1,4
+2024,embiijo01,Joel Embiid,PHI,0,0.0,Logistic Regression,0.4467278774344788,Full,Top5,1,5
+2024,antetgi01,Giannis Antetokounmpo,MIL,0,0.194,Logistic Regression,0.8054682815287302,Full,Top5,1,2
+2024,jokicni01,Nikola Jokić,DEN,1,0.935,Logistic Regression,0.9549044013904135,Full,Top5,1,1
+2024,gilgesh01,Shai Gilgeous-Alexander,OKC,0,0.646,Logistic Regression,0.7502159343071878,Full,Top5,1,3
+2024,doncilu01,Luka Dončić,DAL,0,0.572,SVM (RBF),0.30445816189171526,Full,Top5,1,4
+2024,embiijo01,Joel Embiid,PHI,0,0.0,SVM (RBF),0.1349926906368173,Full,Top5,1,5
+2024,antetgi01,Giannis Antetokounmpo,MIL,0,0.194,SVM (RBF),0.3422490622667429,Full,Top5,1,3
+2024,jokicni01,Nikola Jokić,DEN,1,0.935,SVM (RBF),0.6236259948295965,Full,Top5,1,1
+2024,gilgesh01,Shai Gilgeous-Alexander,OKC,0,0.646,SVM (RBF),0.39703729388540304,Full,Top5,1,2
+2024,doncilu01,Luka Dončić,DAL,0,0.572,Random Forest,0.15273526217407835,Full,Top5,1,5
+2024,embiijo01,Joel Embiid,PHI,0,0.0,Random Forest,0.3477108565627587,Full,Top5,1,4
+2024,antetgi01,Giannis Antetokounmpo,MIL,0,0.194,Random Forest,0.4396195802112077,Full,Top5,1,3
+2024,jokicni01,Nikola Jokić,DEN,1,0.935,Random Forest,0.647885230042888,Full,Top5,1,1
+2024,gilgesh01,Shai Gilgeous-Alexander,OKC,0,0.646,Random Forest,0.6140225086720427,Full,Top5,1,2
+2024,doncilu01,Luka Dončić,DAL,0,0.572,XGBoost,0.15252840518951416,Full,Top5,1,5
+2024,embiijo01,Joel Embiid,PHI,0,0.0,XGBoost,0.5338937640190125,Full,Top5,1,4
+2024,antetgi01,Giannis Antetokounmpo,MIL,0,0.194,XGBoost,0.6058169007301331,Full,Top5,1,3
+2024,jokicni01,Nikola Jokić,DEN,1,0.935,XGBoost,0.7730326652526855,Full,Top5,1,2
+2024,gilgesh01,Shai Gilgeous-Alexander,OKC,0,0.646,XGBoost,0.8635674715042114,Full,Top5,1,1

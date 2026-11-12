@@ -1,86 +1,44 @@
-# NBA MVP Prediction Using Machine Learning
+# NBA MVP Prediction: Controlled Model Selection
 
-## Project Overview
-This mini-project explores NBA MVP prediction using historical player-season statistics and MVP award records. It prepares the data, trains four classifiers, evaluates their performance on later seasons, and produces a ranking of MVP candidates.
+This end-of-season project predicts one NBA MVP winner per season from player statistics. It uses the supplied player and MVP award files without modifying them. The original notebook remains in `notebooks/NBA_MVP_Prediction_original_backup.ipynb`.
 
-## Models
-1. Logistic Regression
-2. Decision Tree
-3. Random Forest
-4. Support Vector Machine (SVM)
+## Final experimental protocol
 
-A majority-class baseline is also included for comparison.
+The final revision uses only four models: Logistic Regression, RBF SVM, Random Forest, and XGBoost. It uses shared 2018–2024 walk-forward validation folds and treats 2025 as an untouched chronological holdout.
 
-## Dataset Files
-Place these files in the `data/` folder:
-- `Player Per Game.csv`
-- `Player Award Shares.csv`
+The experiments change one factor at a time:
 
-The player statistics are combined with historical MVP award results. The target is binary: `1` for an MVP winner and `0` for other players in the included seasons. The notebook checks for duplicate player-season records and handles missing feature values without dropping MVP winners.
+1. Training windows: 10, 15, 20, 25, and all available prior seasons.
+2. Feature configuration: the original 13 statistics versus those statistics plus seven leakage-safe player-history features.
+3. Candidate population: all players, top 10, and top 5 current-season performance candidates.
 
-## Features
-The models use age, games played, games started, minutes per game, field-goal percentage, three-point percentage, free-throw percentage, rebounds, assists, steals, blocks, turnovers, and points per game.
+Candidate pools use only current-season points, assists, and rebounds. They never use award shares, MVP labels, or future information. The output reports MVP inclusion rate so filtering can be audited.
 
-## Evaluation
-The notebook uses a chronological split, training on seasons through 2021 and testing on seasons from 2022 to 2025. It reports accuracy, precision, recall, F1-score, ROC-AUC, average precision, and confusion matrices. It also evaluates season-level rankings and exports feature-importance results.
+## Results from the supplied data
 
-## Repository Structure
-```text
-nba_mvp_prediction_miniproject/
-├── data/
-│   ├── Player Per Game.csv
-│   └── Player Award Shares.csv
-├── notebooks/
-│   └── NBA_MVP_Prediction.ipynb
-├── outputs/
-│   ├── nba_mvp_model_data.csv
-│   ├── model_evaluation.csv
-│   ├── season_ranking_evaluation.csv
-│   ├── final_mvp_ranking.csv
-│   └── *_feature_importance.csv
-├── app.py                  # Streamlit UI
-├── README.md
-├── requirements.txt
-└── .gitignore
+Validation chose full prior history, the original 13 features, and a top-five candidate pool. Logistic Regression was selected because it had the highest primary validation metric: **71.4% Top-1 accuracy** (five of seven 2018–2024 seasons), with 85.7% Top-3 accuracy and PR-AUC 0.605.
+
+Player-history features did not improve the final selected model. Team configuration C was not run because the repository does not contain reliable team wins, win percentage, or conference-standing data; no values were fabricated.
+
+On the untouched 2025 holdout, Random Forest selected the actual MVP first. This one-season result is reported separately and was not used for method selection.
+
+## Leakage protections
+
+- Keys are `(season, player_id)`; `2TM` rows are preferred for traded players.
+- Career and prior-season variables use `shift(1)` within `player_id`, so a current season never contributes to its own history.
+- Rookie rows remain, with missing history handled by fold-fitted imputers.
+- The 2026 incomplete season is excluded.
+- Each walk-forward fold fits preprocessing and its model only on earlier seasons.
+
+## Run
+
+```powershell
+python -m pip install -r requirements.txt
+python final_revision.py
 ```
 
-## Setup and Run
-1. Install Python 3.10 or newer.
-2. From the repository root, install dependencies:
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-3. Start Jupyter:
-   ```bash
-   jupyter notebook
-   ```
-4. Open `notebooks/NBA_MVP_Prediction.ipynb` and run the cells from top to bottom.
-
-Run the notebook with its working directory set to the `notebooks/` folder. It reads source data from `../data/` and writes generated CSV results to `../outputs/`.
-
-## Run the UI
-After the notebook has generated the CSVs in `outputs/` (they are already included), launch the web app from the repository root:
-```bash
-streamlit run app.py
-```
-Pages: season rankings, model comparison, feature importance, and a "try your own stats" predictor that retrains the four models on seasons through 2021.
+Or execute `notebooks/NBA_MVP_Prediction.ipynb`.
 
 ## Outputs
-- `final_mvp_ranking.csv`: ranked MVP candidates based on the model outputs.
-- `nba_mvp_model_data.csv`: cleaned dataset used for modeling.
-- `model_evaluation.csv`: classification metrics for the models and baseline.
-- `season_ranking_evaluation.csv`: ranking performance for the held-out seasons.
-- `decision_tree_feature_importance.csv`
-- `logistic_regression_feature_importance.csv`
-- `random_forest_feature_importance.csv`
-- `svm_feature_importance.csv`
 
-## Limitations
-MVP winners are rare compared with non-winners, causing substantial class imbalance. 
-The held-out test period contains only four seasons, from 2022 to 2025, with one MVP winner per season. 
-The combined ranking places the actual winner first in two of those four seasons and within the top five in all four. 
-These results are preliminary and should not be treated as proof of reliable future performance. 
-The combined score is a ranking score, not a calibrated probability of winning MVP.
-
-## Technologies
-Python, Pandas, NumPy, scikit-learn, Matplotlib, Jupyter Notebook, Streamlit, Plotly.
+The `outputs/` folder contains training-window, feature, candidate-population, and four-model comparisons; season-wise validation and holdout predictions; final model selection; feature importance; a confusion matrix; and precision-recall curves.

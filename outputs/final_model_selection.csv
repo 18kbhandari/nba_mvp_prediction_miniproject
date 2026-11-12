@@ -1,0 +1,2 @@
+selected_training_window,selected_features,selected_candidate_population,selected_model,selection_rule,validation_seasons,untouched_holdout
+Full,A_original_13,Top5,Logistic Regression,"highest validation Top-1; then Top-3, PR-AUC, precision",2018-2024,2025

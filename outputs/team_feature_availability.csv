@@ -1,0 +1,2 @@
+Configuration,Status,Features
+C_team_features,"Not run: repository has no reliable team wins, win percentage, or standings data; B is not duplicated as C.","team_wins, team_win_percentage, conference_standing"

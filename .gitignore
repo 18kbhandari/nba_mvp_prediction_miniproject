@@ -17,3 +17,7 @@ Thumbs.db
 
 # Local secrets
 .env
+
+# Local execution logs
+outputs/*.log
+outputs/*.err
